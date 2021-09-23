@@ -1,0 +1,147 @@
+/* font/definition */
+@font-face {
+    font-family: 'ralewayblack';
+    src: url('font/webfontkit-20210923-035015/raleway-black-webfont.woff2') format('woff2'),
+         url('font/webfontkit-20210923-035015/raleway-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewaylight';
+    src: url('font/webfontkit-20210923-035015/raleway-light-webfont.woff2') format('woff2'),
+         url('font/webfontkit-20210923-035015/raleway-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewaymedium';
+    src: url('font/webfontkit-20210923-035015/raleway-medium-webfont.woff2') format('woff2'),
+         url('font/webfontkit-20210923-035015/raleway-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h1, h2, h3
+{
+	font-family: 'ralewayblack', Arial, sans-serif;
+}
+/* font/definition */
+/* Mep body */
+body
+{
+	font-family: 'ralewaylight', 'ralewayblack', Arial, sans-serif;
+	width: 900px;
+	margin: auto;
+	display: flex;
+	justify-content: ;
+	flex-wrap: wrap;
+}
+/* Mep body */
+/* Mep header */
+header
+{
+	width: 900px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items:flex-end;
+}
+/* Mep header */
+/* Mep bandeau */
+#bandeau
+{
+	display: flex;
+	width: 900px;
+	flex-direction: column;
+	justify-content: flex-start;
+	height: 300px;
+	background-color: green;
+	padding: 0px 0px 0px 0px;
+	margin-top: 0px;
+}
+/* Mep bandeau */
+/* Mep hébergement */
+#hébergement
+{
+	display: flex;
+	width: 900px;
+}
+/* Mep hébergement */
+/* Mep article */
+article
+{
+	width: 575px;
+	height: 500px;
+	margin-top: 25 px;
+	margin-bottom: 25px;
+	background-color: #F2F2F2;
+	border-radius: 10px;
+	margin-right: 25px;
+	display: flex;
+	flex-direction: column;
+}
+/* Mep article */
+/* Mep populaire */
+#populaire
+{
+	width: 275px;
+	background-color: #F2F2F2;
+	margin-left: 25px;
+}
+/* Mep populaire */
+
+.description1 img
+{
+	width: 200;
+	height: 100px;
+	
+}
+.description img
+{
+	width: 100px;
+	height: 125px;
+	
+}
+
+/* header bandeau*/
+#logo
+{
+	display: flex;
+	margin-top: 50px;
+	height: 50px;
+}
+
+#Ancres
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+#Ancres, a
+{
+	color: black;
+	text-decoration: none;
+	margin-right: 25px;
+}
+
+#Ancres, a:hover
+{
+	color: #0065FC;
+}
+
+#filtre
+{
+	background-color: red;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-right: 250px;
+	
+}
+/* header bandeau*/
