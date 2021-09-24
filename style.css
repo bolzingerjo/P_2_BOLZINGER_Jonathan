@@ -30,6 +30,22 @@ h1, h2, h3
 {
 	font-family: 'ralewayblack', Arial, sans-serif;
 }
+h1
+{
+	font-size: 20px;
+}
+h2
+{
+	font-size: 25px;
+}
+h3
+{
+	font-size: 12px;
+}
+p
+{
+	font-size: 10px;
+}
 /* font/definition */
 /* Mep body */
 body
@@ -68,22 +84,66 @@ header
 /* Mep hébergement */
 #hébergement
 {
-	display: flex;
 	width: 900px;
+	height: ;
+	display: flex;
 }
-/* Mep hébergement */
+
 /* Mep article */
 article
 {
 	width: 575px;
 	height: 500px;
-	margin-top: 25 px;
-	margin-bottom: 25px;
+	margin: 25px, 25px, 25px, 25px;
+	padding: 10px, 10px, 0px, 10px;
 	background-color: #F2F2F2;
 	border-radius: 10px;
-	margin-right: 25px;
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: ;
+}
+
+#photo
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#Photo_1 img
+{
+	width: 150px;
+	height: 75px;
+}
+
+#Photo_2 img
+{
+	width: 150px;
+	height: 75px;
+}
+
+#Photo_3 img
+{
+	width: 150px;
+	height: 75px;
+}
+
+#Photo_4 img
+{
+	width: 150px;
+	height: 75px;
+}
+
+#Photo_5 img
+{
+	width: 150px;
+	height: 75px;
+}
+
+#Photo_6 img
+{
+	width: 150px;
+	height: 75px;
 }
 /* Mep article */
 /* Mep populaire */
@@ -94,19 +154,7 @@ article
 	margin-left: 25px;
 }
 /* Mep populaire */
-
-.description1 img
-{
-	width: 200;
-	height: 100px;
-	
-}
-.description img
-{
-	width: 100px;
-	height: 125px;
-	
-}
+/* Mep hébergement */
 
 /* header bandeau*/
 #logo
