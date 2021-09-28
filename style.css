@@ -112,6 +112,31 @@ header
 	text-decoration: overline;
 	line-height: 100px;
 }
+.txt, .txt1
+{
+	font-size : 15px;
+}
+#info
+{
+	display: flex;
+	align-items: center;
+	margin-left: 10px;
+}
+.txt1
+{
+	margin-left: 10px;
+}
+#info i
+{
+	width: 25px;
+	height: 25px;
+	color: #0065FC;
+	border: 1px solid #F2F2F2;
+	border-radius: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 			/* recherche */
 #recherche
 {
@@ -153,8 +178,7 @@ input
 {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
-	padding-right: 250px;
+	
 	
 }
 .filt
@@ -200,7 +224,7 @@ input
 	justify-content: center;
 	align-items: center;
 	position: relative;
-	left: 35px;
+	left: 25px;
 }
 			/* filtres */
 		/* header bandeau*/
