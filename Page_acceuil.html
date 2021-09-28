@@ -24,21 +24,24 @@
 		<section id="bandeau"><!-- h1 + p + form + filtres + p -->
 			<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 			<p>En plein centre ville ou en pleine nature</p>
-			<form id="recherche" method="post" action="traitement.php">
-			<p><i class="fas fa-map-marker-alt"></i>
-			<label for="search" class="search"></label> <input placeholder="Marseille, France" type="search" name="search" id="search"/>Rechercher
-			</p>
-			</form>
+			<div id="recherche">
+				<i class="fas fa-map-marker-alt"></i>
+				<form id="recherche" method="post" action="traitement.php">
+				<label for="search" class="search"></label>
+				<input placeholder="Marseille, France" type="search" name="search" id="search"/>
+				</form>
+				<p>Rechercher</p>
+			</div>
 			<div id="filtre">
 				<h2>Filtres</h2>
 				<i class="fas fa-money-bill-wave"></i>
-				<p>Economique</p>
+				<p class="filt">Economique</p>
 				<i class="fas fa-child"></i>
-				<p>Familial</p>
+				<p class="filt">Familial</p>
 				<i class="fas fa-heart"></i>
-				<p>Romantique</p>
+				<p class="filt">Romantique</p>
 				<i class="fas fa-dog"></i>
-				<p>Animaux autorisés</p>
+				<p id="pet">Animaux autorisés</p>
 			</div>
 			<p><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
 		</section><!-- h1 + p + form + filtres + p -->
@@ -48,7 +51,7 @@
 			<article><!-- h1 + 6photos + p -->
 			<h1>Hébergements à Marseille</h1>
 			<div id="photo">
-				<div id="Photo_1">
+				<div class="Photo_1">
 						<a href="annonce1.html">
 						<img src="images/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge_de_la_Cannebière" />
 						<h3>Auberge de la Cannebière</h3>
@@ -56,7 +59,7 @@
 						<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
 						</a>
 				</div>
-				<div id="Photo_2">
+				<div class="Photo_1">
 						<a href="annonce2.html">
 						<img src="images/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel_du_port">
 						<h3>Hôtel du port</h3>
@@ -64,7 +67,7 @@
 						<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
 						</a>
 				</div>
-				<div id="Photo_3">
+				<div class="Photo_1">
 						<a href="annonce3.html">
 						<img src="images/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel_les_mouettes">
 						<h3>Hôtel Les mouettes</h3>
@@ -72,7 +75,7 @@
 						<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
 						</a>
 				</div>
-				<div id="Photo_4">
+				<div class="Photo_1">
 						<a href="annonce4.html">
 						<img src="images/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel_de_la_mer">
 						<h3>Hôtel de la mer</h3>
@@ -80,7 +83,7 @@
 						<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>	
 						</a>
 				</div>
-				<div id="Photo_5">
+				<div class="Photo_1">
 						<a href="annonce5.html">
 						<img src="images/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge_le_panier">
 						<h3>Auberge Le Panier</h3>
@@ -88,7 +91,7 @@
 						<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
 						</a>
 				</div>
-				<div id="Photo_6">
+				<div class="Photo_1">
 						<a href="annonce6.html">
 						<img src="images/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel_chez_Amina">
 						<h3>Hôtel chez Amina</h3>
@@ -103,7 +106,7 @@
 			<aside><!-- h1 + 3photos_colonne -->
 			<h1>Les plus populaires</h1><i class="fas fa-chart-line"></i>
 			<div id="pop">
-				<div id="Photo_7">
+				<div class="Photo_2">
 						<a href="annonce7.html">
 						<img src="images/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel_Le_soleil_du_matin">
 						<div><h3>Hôtel Le soleil du matin</h3>
@@ -111,7 +114,7 @@
 						<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
 						</a>
 				</div>
-				<div id="Photo_8">
+				<div class="Photo_2">
 						<a href="annonce8.html">
 						<img src="images/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au_coeur_de_l'eau_Chambres_d'hôtes">
 						<h3>Au coeur de l'eau Chambres d'hôtes</h3>
@@ -119,7 +122,7 @@
 						<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
 						</a>
 				</div>
-				<div id="Photo_9">
+				<div class="Photo_2">
 						<a href="annonce2.html">
 						<img src="images/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel_Tout_bleu_et_blanc">
 						<h3>Hôtel Tout bleu et Blanc</h3>
@@ -134,6 +137,7 @@
 		
 		<section id="activites"><!-- Activités -->
 		<h2 id="Titre2">Activités à Marseille</h2>
+		<div id="activite">
 			<div id="activite1">
 				<a href="activité1.html">
 				<img src="images/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux_port">
@@ -174,9 +178,10 @@
 				</a>
 				</div>
 			</div>
+		</div>
 		</section><!-- Activités -->
     
-		<footer id="footer"><!-- 3blocs de texte en colonne -->
+		<footer><!-- 3blocs de texte en colonne -->
 			<div class="liens">
 				<h3>A propos</h3>
 				<p>Fonctionnement du site<br />
