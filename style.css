@@ -233,7 +233,7 @@ input
 #hébergement
 {
 	width: 1170px;
-	height: ;
+	height: 500px;
 	display: flex;
 }
 
@@ -259,6 +259,8 @@ article h1
 #afficher
 {
 	margin-left: 25px;
+	font-size: 12px;
+	margin-bottom: 20px;
 }
 
 #photo
@@ -408,41 +410,134 @@ aside h1
 {
 	width: 1170px;
 	height: 400px;
-
+	display: flex;
+	flex-direction: column;
 }
 #activite
 {
+	width: 1170px;
+	height: 300px;
 	display: flex;
+	justify-content: space-between;
 }
-
+#activite a
+{
+	text-decoration: none;
+	color: black
+}
+#activite1
+{
+	width: 277.5px;
+	height: 300px;
+	border-radius: 25px;
+	box-shadow: 2px 2px 8px black;
+}
+#activite1 h3
+{
+	margin-left: 25px;
+}
 #activite1 img
 {
-	max-height: 300px;
-	max-width: 400px;
+	height: 260px;
+	width: 277.5px;
+	border-radius: 25px 25px 0px 0px;
+}
+#activite4
+{
+	width: 277.5px;
+	height: 300px;
+	border-radius: 25px;
+	box-shadow: 2px 2px 8px black;
+}
+#activite4 img
+{
+	height: 260px;
+	width: 277.5px;
+	border-radius: 25px 25px 0px 0px;
+}
+#activite4 h3
+{
+	margin-left: 25px;
+}
+.photo_double
+{
+	width: 277.5px;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+#activite2
+{
+	height: 150px;
+	width: 277.5px;
+	border-radius: 25px;
+	box-shadow: 2px 2px 8px black;
+}
+#activite3
+{
+	height: 130px;
+	width: 277.5px;
+	border-radius: 25px;
+	box-shadow: 2px 2px 8px black;
+}
+#activite2 h3
+{
+	margin-left: 25px;
+	margin-top: 5px;
+}
+#activite3 h3
+{
+	margin-left: 25px;
+	margin-top: 5px;
 }
 #activite2 img
 {
-	height: 150px;
-	width: 200px;
+	height: 125px;
+	width: 277.5px;
+	border-radius: 25px 25px 0px 0px;
 }
 #activite3 img
 {
-	height: 150px;
-	width: 200px;
-}#activite4 img
+	height: 105px;
+	width: 277.5px;
+	border-radius: 25px 25px 0px 0px;
+}
+#activite5
 {
-	height: 300px;
-	width: 400px;
+	height: 140px;
+	width: 277.5px;
+	border-radius: 25px;
+	box-shadow: 2px 2px 8px black;
 }
 #activite5 img
 {
-	height: 150px;
-	width: 200px;
+	height: 115px;
+	width: 277.5px;
+	border-radius: 25px 25px 0px 0px;
+}
+#activite5 h3
+{
+	margin-left: 25px;
+	margin-top: 5px;
+}
+#activite6
+{
+	height: 140px;
+	width: 277.5px;
+	border-radius: 25px;
+	box-shadow: 2px 2px 8px black;
 }
 #activite6 img
 {
-	height: 150px;
-	width: 200px;
+	height: 115px;
+	width: 277.5px;
+	border-radius: 25px 25px 0px 0px;
+}
+#activite6 h3
+{
+	margin-left: 25px;
+	margin-top: 5px;
 }
 /* Mep activitées */
 /* Mep footer */
