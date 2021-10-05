@@ -11,37 +11,40 @@
 	
 	<header><!-- Logo + Ancres-->
 		<div id="logo">
-		<img src="images/Reservia.svg" alt="Logo Reservia" />
+		<a href="#" title=" Logo Réservia"><img src="images/Reservia.svg" alt="Logo Reservia" /></a>
 		</div>
 		<div id="Ancres">
-		<a href="#Titre1">Hébergements</a>
-		<a href="#Titre2">Activités</a>
-		<a href="inscription.html">S'inscrire</a>
+		<a href="#Titre1" title="Hébergements">Hébergements</a>
+		<a href="#Titre2" title="Activités">Activités</a>
+		<a href="inscription.html" title="S'inscrire"><span class="bleu">S'inscrire</span></a>
 		</div>
 	</header><!-- Logo + Ancres-->
 	
     
-		<section id="bandeau"><!-- h1 + p + form + filtres + p -->
+		<section id="bandeau"><!-- h1 + p + form + filtres -->
 			<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 			<p class="txt">En plein centre ville ou en pleine nature</p>
 			<div id="recherche">
-				<i class="fas fa-map-marker-alt"></i>
-				<form id="recherche" method="post" action="traitement.php">
-				<label for="search" class="search"></label>
+				<form id="recherche">
+				<label for="search" class="search">
+					<i class="fas fa-map-marker-alt"></i>
+				</label>
 				<input placeholder="Marseille, France" type="search" name="search" id="search"/>
+				<button type="submit">Rechercher</button>
 				</form>
-				<p>Rechercher</p>
 			</div>
 			<div id="filtre">
 				<h2>Filtres</h2>
-				<i class="fas fa-money-bill-wave"></i>
-				<p class="filt">Economique</p>
-				<i class="fas fa-child"></i>
-				<p class="filt">Familial</p>
-				<i class="fas fa-heart"></i>
-				<p class="filt">Romantique</p>
-				<i class="fas fa-dog"></i>
-				<p id="pet">Animaux autorisés</p>
+				<ul>
+					<a href="#" title="Economique"><li><i class="fas fa-money-bill-wave"></i>
+					<span class="filt">Economique</span></li></a>
+					<a href="#" title="Familial"><li><i class="fas fa-child"></i>
+					<span class="filt">Familial</span></li></a>
+					<a href="#" title="Romantique"><li><i class="fas fa-heart"></i>
+					<span class="filt">Romantique</span></li></a>
+					<a href="#" title="Animaux"><li><i class="fas fa-dog"></i>
+					<span id="pet">Animaux autorisés</span></li></a>
+				</ul>
 			</div>
 			<div id="info">
 				<i class="fas fa-info"></i>
@@ -55,7 +58,7 @@
 			<h1>Hébergements à Marseille</h1>
 			<div id="photo">
 				<div class="Photo_1">
-						<a href="annonce1.html">
+						<a href="#" title="Auberge de la Cannebière">
 						<img src="images/annonce1.jpg" alt="Auberge_de_la_Cannebière" />
 						<div class="dkltxt">
 						<h3>Auberge de la Cannebière</h3>
@@ -65,7 +68,7 @@
 						</a>
 				</div>
 				<div class="Photo_1">
-						<a href="annonce2.html">
+						<a href="#" title="Hôtel du port">
 						<img src="images/annonce2.jpg" alt="Hôtel_du_port">
 						<div class="dkltxt">
 						<h3>Hôtel du port</h3>
@@ -75,7 +78,7 @@
 						</a>
 				</div>
 				<div class="Photo_1">
-						<a href="annonce3.html">
+						<a href="#" title="Hôtel Les mouettes">
 						<img src="images/annonce3.jpg" alt="Hôtel_les_mouettes">
 						<div class="dkltxt">
 						<h3>Hôtel Les mouettes</h3>
@@ -85,7 +88,7 @@
 						</a>
 				</div>
 				<div class="Photo_1">
-						<a href="annonce4.html">
+						<a href="#" title="Hôtel de la mer">
 						<img src="images/annonce4.jpg" alt="Hôtel_de_la_mer">
 						<div class="dkltxt">
 						<h3>Hôtel de la mer</h3>
@@ -95,7 +98,7 @@
 						</a>
 				</div>
 				<div class="Photo_1">
-						<a href="annonce5.html">
+						<a href="#" title="Auberge Le Panier">
 						<img src="images/annonce5.jpg" alt="Auberge_le_panier">
 						<div class="dkltxt">
 						<h3>Auberge Le Panier</h3>
@@ -105,7 +108,7 @@
 						</a>
 				</div>
 				<div class="Photo_1">
-						<a href="annonce6.html">
+						<a href="#" title="Hôtel chez Amina">
 						<img src="images/annonce6.jpg" alt="Hôtel_chez_Amina">
 						<div class="dkltxt">
 						<h3>Hôtel chez Amina</h3>
@@ -115,14 +118,14 @@
 						</a>
 				</div>
 			</div>
-			<p id="afficher">Afficher plus</p>
+			<p id="afficher"><a href="#" title="afficher plus">Afficher plus</a></p>
 			</article><!-- h1 + 6photos + p -->
 		
 			<aside><!-- h1 + 3photos_colonne -->
 			<div id="titgraph"><h1>Les plus populaires</h1><span class="graph"><i class="fas fa-chart-line"></i></span></div>
 			<div id="pop">
 				<div class="Photo_2">
-						<a href="annonce7.html">
+						<a href="#" title="Hôtel Le soleil du matin">
 						<img src="images/annonce7.jpg" alt="Hôtel_Le_soleil_du_matin">
 						<div class="poptxt"><h3>Hôtel Le soleil du matin</h3>
 						<p>Nuit à partir de 128<span class="gras">€</span></p>
@@ -130,7 +133,7 @@
 						</a>
 				</div>
 				<div class="Photo_2">
-						<a href="annonce8.html">
+						<a href="#" title="Au coeur de l'eau Chambres d'hôtes">
 						<img src="images/annonce8.jpg" alt="Au_coeur_de_l'eau_Chambres_d'hôtes">
 						<div class="poptxt"><h3>Au coeur de l'eau Chambres d'hôtes</h3>
 						<p>Nuit à partir de 71<span class="gras">€</span></p>
@@ -138,7 +141,7 @@
 						</a>
 				</div>
 				<div class="Photo_2">
-						<a href="annonce9.html">
+						<a href="#" title="Hôtel Tout bleu et Blanc">
 						<img src="images/annonce9.jpg" alt="Hôtel_Tout_bleu_et_blanc">
 						<div class="poptxt"><h3>Hôtel Tout bleu et Blanc</h3>
 						<p>Nuit à partir de 68<span class="gras">€</span></p>
@@ -154,40 +157,40 @@
 		<h2 id="Titre2">Activités à Marseille</h2>
 		<div id="activite">
 			<div id="activite1">
-				<a href="activité1.html">
+				<a href="#l" title="Vieuxport">
 				<span><img src="images/Vieuxport.jpg" alt="Vieux_port">
 				<h3>Vieux Port</h3></span>
 				</a>
 			</div>
 			<div class="photo_double">
-				<div id="activite2">
-				<a href="activité2.html">
+				<div id="activite2" title="Fort">
+				<a href="#">
 				<img src="images/Fort.jpg" alt="Fort_de_Pomègues">
 				<h3>Fort de Pomègues</h3>
 				</a>
 				</div>
-				<div id="activite3">
-				<a href="activité3.html">
+				<div id="activite3" title="Frioul">
+				<a href="#">
 				<img src="images/Frioul.jpg" alt="Iles_de_Frioul">
 				<h3>Iles du Frioul</h3>
 				</a>
 				</div>
 			</div>
-			<div id="activite4">
-			<a href="activité4.html">
+			<div id="activite4" title="Calanques">
+			<a href="#">
 			<img src="images/Calanques.jpg" alt="Parc_National_des_Calanques">
 			<h3>Parc National des Calanques</h3>
 			</a>
 			</div>
 			<div class="photo_double">
 				<div id="activite5">
-				<a href="activité5.html">
+				<a href="#" title="Notre-Dame-de-la-Garde">
 				<img src="images/NDG.jpg" alt="Notre-Dame-de-la-Garde">
 				<h3>Notre-Dame-de-la-Garde</h3>
 				</a>
 				</div>
-				<div id="activite6">
-				<a href="activité6.html">
+				<div id="activite6" title="Longchamp">
+				<a href="#">
 				<img src="images/Lgchamp.jpg" alt="Parc_Longchamp">
 				<h3>Parc Longchamp</h3>
 				</a>
@@ -200,19 +203,19 @@
 			<div id="foot">
 				<div class="liens">
 					<h3>A propos</h3>
-					<p>Fonctionnement du site</p>
-					<p>Conditions générales de vente</p>
-					<p>Données et confidentialité</p>
+					<a href="#" title="Fonctionnement du site"><p>Fonctionnement du site</p></a>
+					<a href="#" title="Conditions générales"><p>Conditions générales de vente</p></a>
+					<a href="#" title="Confidentialité"><p>Données et confidentialité</p></a>
 				</div>
 				<div class="liens">
 					<h3>Nos hébergements</h3>
-					<p>Charte qualité</p>
-					<p>Soumettre votre hôtel</p>
+					<a href="#" title="Charte qualité"><p>Charte qualité</p></a>
+					<a href="#" title="Soumettre votre hôtel"><p>Soumettre votre hôtel</p></a>
 				</div>
 				<div class="liens">
 					<h3>Assistance</h3>
-					<p>Centre d'aide</p>
-					<p>Nous contacter</p>
+					<a href="#" title="Centre d'aide"><p>Centre d'aide</p></a>
+					<a href="#" title="Nous contacter"><p>Nous contacter</p></a>
 				</div>
 			</div>
 		</footer>

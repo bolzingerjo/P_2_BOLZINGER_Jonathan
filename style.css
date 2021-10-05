@@ -54,8 +54,8 @@ p
 /* Mep body */
 body
 {
-	font-family: 'ralewaylight', 'ralewayblack', Arial, sans-serif;
-	width: 1600px;
+	font-family: 'ralewaymedium', 'ralewayblack', Arial, sans-serif;
+	max-width: 1600px;
 	margin: auto;
 	display: flex;
 	justify-content: center;
@@ -80,37 +80,27 @@ header
 	flex-direction: column;
 	justify-content: flex-start;
 	height: 300px;
-	padding: 0px 0px 0px 0px;
-	margin-top: 0px;
 }
 		/* header bandeau*/
-
-#logo
-{
-	display: flex;
-	margin-top: 50px;
-	height: 50px;
-}
-
 #Ancres
 {
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-end;
+	padding-top: 20px;
+	border-top: 2px solid white;
 }
-
 #Ancres a
 {
 	color: black;
 	text-decoration: none;
 	margin-right: 25px;
 }
-
-#Ancres a:hover
+.bleu
 {
 	color: #0065FC;
-	text-decoration: overline;
-	line-height: 100px;
+}
+#Ancres a:hover
+{
+	padding-top: 20px;
+	border-top: 2px solid #0065FC;
 }
 .txt, .txt1
 {
@@ -160,7 +150,7 @@ input
 	height: 25px;
 	border: 1px solid #F2F2F2;
 }
-#recherche p
+#recherche button
 {
 	width: 100px;
 	height: 25px;
@@ -176,10 +166,23 @@ input
 			/* filtres */
 #filtre
 {
+	display: flex;	
+}
+#filtre ul
+{
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+}
+ul a
+{
+	text-decoration: none;
+	color: black;
+}
+#filtre li
+{
 	display: flex;
 	align-items: center;
-	
-	
 }
 .filt
 {
@@ -195,7 +198,7 @@ input
 .filt:hover
 {
 	background-color: #DEEBFF;
-	height: 50px;
+	
 }
 #pet
 {
@@ -211,7 +214,7 @@ input
 #pet:hover
 {
 	background-color: #DEEBFF;
-	height: 50px;
+	
 }
 #filtre i
 {
@@ -248,21 +251,23 @@ article
 	display: flex;
 	flex-direction: column;
 }
-
 article h1
 {
 	margin-left: 50px;
 	margin-top: 50px;
 }
-
 #afficher
 {
 	margin-left: 50px;
-	font-size: 12px;
+	font-size: 15px;
 	margin-bottom: 50px;
-	margin-top: 0px;
+	font-family: 'ralewaymedium', Arial, sans-serif;
 }
-
+#afficher a
+{
+	text-decoration: none;
+	color: black;
+}
 #photo
 {
 	width: 800px;
@@ -282,8 +287,11 @@ article h1
 	height: 200px;
 	display: flex;
 	flex-direction: column;
-	box-shadow: 2px 2px 8px black;
-	
+	box-shadow: 2px 2px 8px silver;
+}
+.Photo_1 a:hover h3
+{
+	color: #0065FC;
 }
 .Photo_1 img
 {
@@ -378,7 +386,11 @@ aside h1
 	margin-bottom: 10px;
 	border: 2px solid white;
 	border-radius: 10px 10px 10px 10px;
-	box-shadow: 2px 2px 8px black;
+	box-shadow: 2px 2px 8px silver;
+}
+.Photo_2 a:hover h3
+{
+	color: #0065FC;
 }
 .Photo_2 a
 {
@@ -442,12 +454,16 @@ aside h1
 	text-decoration: none;
 	color: black
 }
+#activite a:hover h3
+{
+	color: #0065FC;
+}
 #activite1
 {
 	width: 330px;
 	height: 500px;
 	border-radius: 25px;
-	box-shadow: 2px 2px 8px black;
+	box-shadow: 2px 2px 8px silver;
 }
 #activite1 h3
 {
@@ -465,7 +481,7 @@ aside h1
 	width: 330px;
 	height: 500px;
 	border-radius: 25px;
-	box-shadow: 2px 2px 8px black;
+	box-shadow: 2px 2px 8px silver;
 }
 #activite4 img
 {
@@ -491,14 +507,14 @@ aside h1
 	height: 290px;
 	width: 330px;
 	border-radius: 25px;
-	box-shadow: 2px 2px 8px black;
+	box-shadow: 2px 2px 8px silver;
 }
 #activite3
 {
 	height: 190px;
 	width: 330px;
 	border-radius: 25px;
-	box-shadow: 2px 2px 8px black;
+	box-shadow: 2px 2px 8px silver;
 }
 #activite2 h3
 {
@@ -529,7 +545,7 @@ aside h1
 	height: 240px;
 	width: 330px;
 	border-radius: 25px;
-	box-shadow: 2px 2px 8px black;
+	box-shadow: 2px 2px 8px silver;
 }
 #activite5 img
 {
@@ -548,7 +564,7 @@ aside h1
 	height: 240px;
 	width: 330px;
 	border-radius: 25px;
-	box-shadow: 2px 2px 8px black;
+	box-shadow: 2px 2px 8px silver;
 }
 #activite6 img
 {
@@ -566,8 +582,7 @@ aside h1
 /* Mep footer */
 footer
 {
-	width: 1600px;
-	height: 200px;
+	width: 100%;
 	background-color: #F2F2F2
 }
 #foot
@@ -577,9 +592,14 @@ footer
 	justify-content: space-between;
 	margin-left: 100px;
 }
-.liens
+.liens a
 {
-	
+	text-decoration: none;
+	color: black;
+}
+.liens a:hover
+{
+	color: #0065FC;
 }
 .liens h3
 {
@@ -588,6 +608,10 @@ footer
 .liens p
 {
 	font-size: 15px;
-	fon
 }
 /* Mep footer */
+/* Media queries */
+@media screen and (max-width: 480px)
+{
+    /* Rédigez vos propriétés CSS ici */
+}
