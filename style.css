@@ -66,10 +66,12 @@ body
 header
 {
 	width: 1400px;
-	margin: auto;
 	display: flex;
 	justify-content: space-between;
-	align-items:flex-end;
+}
+#logo
+{
+	flex: 4;
 }
 /* Mep header */
 	/* Mep bandeau */
@@ -82,22 +84,34 @@ header
 	height: 300px;
 }
 		/* header bandeau*/
-#Ancres
+.Ancres
 {
 	padding-top: 20px;
 	border-top: 2px solid white;
 }
-#Ancres a
+#ancr_inscr
+{
+	display: flex;
+}
+.Ancres a
 {
 	color: black;
 	text-decoration: none;
 	margin-right: 25px;
 }
+#inscr
+{
+	padding-top: 22px;
+}
 .bleu
 {
 	color: #0065FC;
 }
-#Ancres a:hover
+#inscr a
+{
+	text-decoration: none;
+}
+.Ancres a:hover
 {
 	padding-top: 20px;
 	border-top: 2px solid #0065FC;
@@ -611,7 +625,92 @@ footer
 }
 /* Mep footer */
 /* Media queries */
-@media screen and (max-width: 480px)
+@media all and (max-width: 1024px)
 {
-    /* Rédigez vos propriétés CSS ici */
+    body
+	{
+		width: 480px;
+		height: auto;
+		margin: auto;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	header
+	{
+		background-color: red;
+		max-width: 100%;
+		height: auto;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	#logo
+	{
+		order: 1;
+	}
+	#inscr
+	{
+		order: 2;
+		width: 50%;
+	}
+
+	.Ancres
+	{
+		order: 3;
+		width: 50%;
+	}
+	article
+	{
+		background-color: white;
+	}
+	#bandeau
+	{
+		max-width: 480px;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+	#hébergement
+	{
+		max-width: 480px;
+		height: auto;
+		flex-direction: column-reverse;
+
+	}
+	#photo
+	{
+		max-width: 480px;
+		height: auto;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.Photo_1
+	{
+		width: 350px;
+		height: 175px;
+	}
+	.Photo_1 img
+	{
+		width:350px;
+		height: 100px;
+	}
+	#activites
+	{
+		max-width: 480px;
+		height: auto;
+		flex-direction: column;
+	}
+	#activite
+	{
+		max-width: 480px;
+		height: auto;
+		flex-direction: column;
+	}
+	#foot
+	{
+		max-width: 480px;
+		height: auto;
+		flex-direction: column;
+	}
 }
