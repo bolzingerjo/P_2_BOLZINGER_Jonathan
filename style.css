@@ -820,6 +820,12 @@ footer
 		border-radius: 0px;
 		padding-bottom: 20px;
 	}
+	#pop
+	{
+		width: 480px;
+		height: auto;
+		justify-content: flex-start;
+	}
 	.Photo_2
 	{
 		width: 420px;
@@ -828,9 +834,8 @@ footer
 		display: flex;
 		flex-direction: column;
 		margin-bottom: 0px;
+		margin-top: 15px;
 		border: 5px solid white;
-		border-radius: 10px 10px 10px 10px;
-		box-shadow: 2px 2px 8px silver;
 	}
 	.Photo_2 h3
 	{
@@ -849,41 +854,78 @@ footer
 	.poptxt
 	{
 		margin-left: 150px;
-	}	
+	}
+	article
+	{
+		width: 460px;
+		height: auto;
+	}
+	article h1
+	{
+		margin-left: 20px;
+		margin-top: 20px;
+	}
 	#photo
 	{
-		max-width: 480px;
+		max-width: 460px;
 		height: auto;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		margin-left: 0px;
 	}
 	.Photo_1
 	{
-		width: 350px;
-		height: 175px;
+		width: 420px;
+		height: 200px;
+		border: 5px solid white;
+		margin-bottom: 15px;
 	}
 	.Photo_1 img
 	{
-		width:350px;
-		height: 100px;
+		width: 420px;
+		height: 125px;
+	}
+	#afficher
+	{
+		margin-left: 20px;
 	}
 	#activites
 	{
-		max-width: 480px;
+		max-width: 460px;
 		height: auto;
 		flex-direction: column;
+		margin-bottom: 20px;
 	}
 	#activite
 	{
-		max-width: 480px;
+		max-width: 460px;
 		height: auto;
 		flex-direction: column;
+	}
+	#activite1, #activite2, #activite3, #activite4, #activite5, #activite6
+	{
+		width: 420px;
+		height: 175px;
+		margin-top: 15px;
+	}
+	#activite1 img, #activite2 img, #activite3 img, #activite4 img, #activite5 img, #activite6 img
+	{
+		width: 420px;
+		height: 125px;
+	}
+	.photo_double
+	{
+		width: 460px;
+		height: auto;
+		justify-content: flex-start;
 	}
 	#foot
 	{
 		max-width: 480px;
 		height: auto;
 		flex-direction: column;
+		margin-left: 20px;
+		padding-bottom: 20px;
 	}
 }
