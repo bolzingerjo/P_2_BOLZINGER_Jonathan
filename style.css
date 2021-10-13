@@ -175,6 +175,7 @@ input
 	justify-content: center;
 	align-items: center;
 	border-radius: 0px 25px 25px 0px;
+	border: none;
 }
 #rech2
 {
@@ -214,10 +215,9 @@ ul a
 	justify-content: center;
 	align-items: center;
 }
-.filt:hover
+.filt1:hover, .filt2:hover, .filt3:hover
 {
 	background-color: #DEEBFF;
-	
 }
 #pet
 {
@@ -602,7 +602,7 @@ aside h1
 footer
 {
 	width: 100%;
-	background-color: #F2F2F2
+	background-color: #F2F2F2;
 }
 #foot
 {
@@ -671,10 +671,14 @@ footer
 		display: flex;
 		justify-content: center;
 		padding-top: 15px;
-		border-bottom-style: solid;
-		border-bottom-color: #F2F2F2;
-		border-bottom-width: 2px;
-
+	}
+	.Ancres a
+	{
+		border-bottom: 2px solid #F2F2F2;
+		width: 240px;
+		display: flex;
+		justify-content: center;
+		margin: 0px;
 	}
 	.Ancres a:hover
 	{
@@ -683,9 +687,7 @@ footer
 		color: #0065FC;
 		padding-top: 0px;
 		border-top: none;
-		border-bottom-style: solid;
-		border-bottom-color: #0065FC;
-		border-bottom-width: 2px;
+		border-bottom: 2px solid #0065FC;
 		width: 240px;
 	}
 	article
@@ -748,6 +750,7 @@ footer
 		position: relative;
 		right: 20px;
 		border-radius: 15px 15px 15px 15px;
+		border: none;
 	}
 	#filtre
 	{
