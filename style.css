@@ -644,36 +644,49 @@ footer
 	}
 	header
 	{
-		max-width: 100%;
-		height: auto;
+		width: 480px;
+		height: 100px;
 		flex-direction: row;
 		flex-wrap: wrap;
+		padding-top: 15px;
 	}
 	#logo
 	{
 		order: 1;
-		
-		margin-left: 20px;
+		margin-left: 30px;
 	}
 	#inscr
 	{
 		order: 2;
 		width: 50%;
-		
+		display: flex;
+		justify-content: flex-end;
+		margin-right: 30px;
 	}
-
 	.Ancres
 	{
 		order: 3;
-		width: 50%;
+		width: 240px;
 		border-top: none;
-		border-bottom: 2px solid #F2F2F2;
+		display: flex;
+		justify-content: center;
+		padding-top: 15px;
+		border-bottom-style: solid;
+		border-bottom-color: #F2F2F2;
+		border-bottom-width: 2px;
+
 	}
 	.Ancres a:hover
 	{
-		width: 50%;
+		display: flex;
+		justify-content: center;
+		color: #0065FC;
+		padding-top: 0px;
 		border-top: none;
-		border-bottom: 2px solid #0065FC;
+		border-bottom-style: solid;
+		border-bottom-color: #0065FC;
+		border-bottom-width: 2px;
+		width: 240px;
 	}
 	article
 	{
@@ -728,6 +741,7 @@ footer
 		height: 50px;
 		color: white;
 		background-color: #0065FC;
+		font-size: 18px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -837,6 +851,10 @@ footer
 		margin-top: 15px;
 		border: 5px solid white;
 	}
+	#titgraph
+	{
+		margin-bottom: 15px;
+	}
 	.Photo_2 h3
 	{
 		font-size: 20px;
@@ -896,6 +914,7 @@ footer
 		height: auto;
 		flex-direction: column;
 		margin-bottom: 20px;
+		justify-content: center;
 	}
 	#activite
 	{
