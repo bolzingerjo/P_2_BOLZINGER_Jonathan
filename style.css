@@ -187,23 +187,23 @@ input
 			/* filtres */
 #filtre
 {
-	display: flex;	
+	display: flex;
 }
 #filtre ul
 {
 	list-style-type: none;
 	display: flex;
-	justify-content: center;
 }
 ul a
 {
 	text-decoration: none;
 	color: black;
-}
-#filtre li
-{
 	display: flex;
 	align-items: center;
+}
+ul li
+{
+	display: flex;
 }
 .filt1, .filt2, .filt3
 {
