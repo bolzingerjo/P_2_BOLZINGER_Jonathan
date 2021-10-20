@@ -766,7 +766,7 @@ footer
 	{
 		width: 460px;
 		flex-direction: column;
-		align-items: flex start;
+		align-items: flex-start;
 	}
 	#filtre ul
 	{
