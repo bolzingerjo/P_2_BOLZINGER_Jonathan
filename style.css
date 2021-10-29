@@ -25,26 +25,12 @@
     font-style: normal;
 
 }
-
+body {
+	margin: 0;
+}
 h1, h2, h3
 {
 	font-family: 'ralewaymedium', Arial, sans-serif;
-}
-h1
-{
-	font-size: 20px;
-}
-h2
-{
-	font-size: 25px;
-}
-h3
-{
-	font-size: 12px;
-}
-p
-{
-	font-size: 10px;
 }
 #afficher
 {
@@ -55,41 +41,35 @@ p
 body
 {
 	font-family: 'ralewaymedium', 'ralewayblack', Arial, sans-serif;
-	display: flex;
+	/*display: flex;
 	flex-direction: column;
-	flex-wrap: wrap;
+	flex-wrap: wrap;*/
 }
 /* Mep body */
 /* Mep header */
 header
 {
-	margin: 0px 1px 0px 1px;
-	padding: 0px 20px 0px 20px;
+	padding: 0px 20px;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 .entete
 {
 	display: flex;
-}
-#logo
-{
-	margin-right: 50%
-}
-.Ancres
-{
-	padding-top: 20px;
-	border-top: 2px solid white;
-	margin-right: 5%;
+	flex-wrap: wrap-reverse;
 }
 .Ancres a
 {
+	padding: 30px 20px;
+	display: block;
+	border-top: 2px solid white;
 	color: black;
 	text-decoration: none;
 }
 #inscr
 {
-	padding-top: 22px;
+	padding: 30px 20px;
 }
 .bleu
 {
@@ -102,7 +82,6 @@ header
 }
 .Ancres a:hover
 {
-	padding-top: 20px;
 	border-top: 2px solid #0065FC;
 }
 /* Mep header */
@@ -314,7 +293,7 @@ article
 	height: auto;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	align-items: center;
 
 }
@@ -328,8 +307,9 @@ article
 	display: flex;
 	flex-direction: column;
 	box-shadow: 2px 2px 8px silver;
-	margin-bottom: 5%;
-	padding-bottom: 1%;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	min-width: 220px;
 }
 .Photo_1 a:hover h3
 {
@@ -388,6 +368,7 @@ aside
 	flex-direction: column;
 	border-radius: 20px;
 	padding: 40px 20px 40px 20px;
+	min-width: 300px;
 }
 #titgraph
 {
@@ -509,7 +490,7 @@ aside h1
 }
 #activite1 h3
 {
-	margin-left: 5%;
+	margin: 5%;
 	font-size: 15px;
 }
 #activite1 img
@@ -533,7 +514,7 @@ aside h1
 }
 #activite4 h3
 {
-	margin-left: 5%;
+	margin: 5%;
 	font-size: 15px;
 }
 .photo_double
@@ -560,12 +541,12 @@ aside h1
 }
 #activite2 h3
 {
-	margin-left: 5%;
+	margin: 5%;
 	font-size: 15px;
 }
 #activite3 h3
 {
-	margin-left: 5%;
+	margin: 5%;
 	font-size: 15px;
 }
 #activite2 img
@@ -595,7 +576,7 @@ aside h1
 }
 #activite5 h3
 {
-	margin-left: 5%;
+	margin: 5%;
 	font-size: 15px;
 }
 #activite6
@@ -613,7 +594,7 @@ aside h1
 }
 #activite6 h3
 {
-	margin-left: 5%;
+	margin: 5%;
 	font-size: 15px;
 }
 /* Mep activitées */
@@ -643,11 +624,11 @@ footer
 }
 .liens h3
 {
-	font-size: 20px;
+	font-size: 18px;
 }
 .liens p
 {
-	font-size: 15px;
+	font-size: 12px;
 }
 /* Mep footer */
 /* Media queries */
@@ -691,61 +672,48 @@ footer
 	{
 		justify-content: center;
 		align-items: center;
+		padding: 0 20px;
 	}
 	header
 	{
 		height: auto;
-		flex-direction: row;
-		flex-wrap: wrap;
-		padding: 5px;
+		display: block;
+		margin: 0;
+		padding: 0;
+		position: relative;
 	}
 	#logo
 	{
-		margin-left: 5%;
+		margin: 0;
+		padding: 14px 0px;
 	}
 	#inscr
 	{
-		order: 1;
-		position: relative;
-		top: -55px;
-		left: 400px;
+		position: absolute;
+		top: 0;
+		right: 0;
 	}
 	.Ancres
 	{
-		order: 2;
-		width: 240px;
-		border-top: none;
-		display: flex;
-		justify-content: center;
-		padding-top: 15px;
-		position: relative;
-		right: 68px;
-		margin-right: 0px;
+		width: 50%;
+		text-align: center;
 	}
 	.Ancres a
 	{
+		border-top: none;
 		border-bottom: 2px solid #F2F2F2;
-		width: 240px;
-		display: flex;
-		justify-content: center;
 		margin: 0px;
 	}
 	.Ancres a:hover
 	{
-		display: flex;
-		justify-content: center;
 		color: #0065FC;
-		padding-top: 0px;
 		border-top: none;
 		border-bottom: 2px solid #0065FC;
-		width: 240px;
 	}
 	#bandeau
 	{
-		padding: 0px 0px 0px 0px;
-		height: auto;
+		padding: 0px 20px;
 		flex-direction: column;
-		flex-wrap: wrap;
 	}
 	#bandeau h1
 	{
@@ -756,15 +724,6 @@ footer
 		font-size: 18px;
 		margin-top: 0px;
 		margin-bottom: 30px;
-	}
-	#recherche
-	{
-		width: 460px;
-		justify-content: center;
-	}
-	input
-	{
-		width: 350px;
 	}
 	#filtre
 	{
@@ -806,10 +765,11 @@ footer
 	}
 	article
 	{
-		
-		margin: 0%;
+		background-color: white;
 		border-radius: 0px;
-		padding: 40px 40px 40px 40px;
+		padding: 0 20px;
+		margin: 0 -20px;
+		width: 100%;
 	}
 	#photo
 	{
@@ -825,32 +785,26 @@ footer
 	{
 		width: 100%;
 		border-radius: 0px;
-		padding: 0px 0px 0px 0px;
+		padding: 0 20px;
+		margin: 0 -20px;
 	}
 	#pop
 	{
-		background-color: pink;
 		width: 100%;
 		padding: 0px 0px 0px 0px;
 	}
 	.Photo_2
 	{
-		width: 80%;
-		margin-bottom: 5px;
+		width: 100%;
+		margin-bottom: 20px;
 	}
 	.poptxt
 	{
 		height: 150px;
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
+		justify-content: space-around;
 		padding-left: 5%;
-	}
-	#titgraph
-	{
-		background-color: green;
-		display: flex;
-		justify-content: center;
 	}
 	aside h1
 	{
@@ -860,4 +814,80 @@ footer
 	{
 		margin: 2%;
 	}
+	#activites
+	{
+		padding: 0 20px;
+		margin: 0 -20px;
+		width: 100%;
+	}
+	#activite
+	{
+		width: 100%;
+		flex-direction: column;
+	}
+	#activite1
+	{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	#activite1 img
+	{
+		height: 175px;
+	}
+	#activite4
+	{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	#activite4 img
+	{
+		height: 175px;
+	}
+	.photo_double
+	{
+		width: 100%;
+	}
+	#activite2
+	{
+		height: 240px;
+		margin-bottom: 20px;
+	}
+	#activite3
+	{
+		height: 240px;
+		margin-bottom: 20px;
+	}
+	#activite5
+	{
+		margin-bottom: 20px;
+	}
+	#activite6
+	{
+		margin-bottom: 20px;
+	}
+	#activite2 img
+	{
+		height: 175px;
+	}
+	#activite3 img
+	{
+		height: 175px;
+	}
+	#activite5 img
+	{
+		height: 175px;
+	}
+	#activite6 img
+	{
+		height: 175px;
+	}
+	footer 
+	{
+		margin: 20px -20px;
+	}
+	#foot
+	{
+		flex-direction: column;
+	}
 }
+/* Media queries */
