@@ -28,7 +28,7 @@
 body {
 	margin: 0;
 }
-h1, h2, h3
+h2, h3
 {
 	font-family: 'ralewaymedium', Arial, sans-serif;
 }
@@ -41,9 +41,6 @@ h1, h2, h3
 body
 {
 	font-family: 'ralewaymedium', 'ralewayblack', Arial, sans-serif;
-	/*display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;*/
 }
 /* Mep body */
 /* Mep header */
@@ -264,7 +261,6 @@ ul li
 	display: flex;
 	margin: 0px 20px 0px 20px;
 }
-
 /* Mep article */
 article
 {
@@ -276,6 +272,10 @@ article
 	display: flex;
 	flex-direction: column;
 	padding: 40px 20px 40px 20px;
+}
+article h2
+{
+	margin-top: 0px;
 }
 #afficher
 {
@@ -375,7 +375,7 @@ aside
 	display: flex;
 	justify-content: space-between;
 }
-aside h1
+aside h2
 {
 	margin-top: 0px;
 }
@@ -438,6 +438,7 @@ aside h1
 	color: black;
 	font-size: 15px;
 	margin: 0px;
+	max-width: 140px;
 }
 .Photo_2 p
 {
@@ -805,6 +806,10 @@ footer
 		flex-direction: column;
 		justify-content: space-around;
 		padding-left: 5%;
+	}
+	.Photo_2 h3
+	{
+		max-width: none;
 	}
 	aside h1
 	{
