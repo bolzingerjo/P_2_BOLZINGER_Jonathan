@@ -41,9 +41,6 @@ h1, h2, h3
 body
 {
 	font-family: 'ralewaymedium', 'ralewayblack', Arial, sans-serif;
-	/*display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;*/
 }
 /* Mep body */
 /* Mep header */
@@ -438,6 +435,7 @@ aside h1
 	color: black;
 	font-size: 15px;
 	margin: 0px;
+	max-width: 140px;
 }
 .Photo_2 p
 {
@@ -797,6 +795,10 @@ footer
 	{
 		width: 100%;
 		margin-bottom: 20px;
+	}
+	.Photo_2 h3
+	{
+		max-width: none;
 	}
 	.poptxt
 	{
